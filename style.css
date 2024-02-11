@@ -232,10 +232,11 @@ section {
     margin-bottom: .5rem;
     text-decoration: underline;
     cursor: pointer;
+    color: rgb(255, 248, 235);
 }
 
 .piece-name:hover {
-    color: rgb(255, 248, 235);
+    color: rgb(34, 83, 49);
 }
 
 .excerpt {
