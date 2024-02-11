@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Yu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <div class="navigation">
+        <nav id="desktop-nav">
+                <div class=>
+                    <ul class="nav-links">
+                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                        <li><a href="#publications">Select Publications</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+        </nav>
+    </div>
+    <div class="navigation">
+        <nav id="hamburger-nav">
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                        <li><a href="#publications" onclick="toggleMenu()">Select Publications</a></li>
+                        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> 
+                    </div>
+                </div>
+        </nav>
+    </div>
+   <section id="about">
+        <div class="section__text">
+            <div class="section__pic-container1">
+                <img src="./assets/irisyu.png" alt="Iris Yu profile picture">
+            </div>
+            <h1 class="title">iris yu</h1>
+            <p class="section__text__p1">is a Chinese-American writer and a sophomore at Columbia University studying English and Computer Science.</p>
+            <div id="socials-container">
+                <img 
+                    src="./assets/linkedin.png" 
+                    alt="My LinkedIn profile"
+                    class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/iris-yu-569948269/'"
+                />
+                <img 
+                    src="./assets/github.png" 
+                    alt="My Github profile"
+                    class="icon"
+                    onclick="location.href='https://github.com/irislyu04'"
+                />
+            </div>
+        </div>
+        <div class="section__pic-container2">
+            <img src="./assets/irisyu.png" alt="Iris Yu profile picture">
+        </div>
+   </section>
+   <section id="publications">
+        <h1 class="title">select publications</h1>
+        <div class="publications-container">
+            <div class="piece-container">
+                <p class="journal">Gasher Journal</p>
+                <h3
+                    class="piece-name"
+                    onclick="location.href='https://www.gasherpress.com/spring-2021'">Birdbath</h3>
+                <p class="excerpt">Lina and I are chugging fruit punch in Becky Anderson’s backyard when the birds start dying. Becky raises a toast to making it out of high school in one piece, nevermind the fact that we all lost ten pounds and...</p>
+            </div>
+            <div class="piece-container">
+                <p class="journal">Kissing Dynamite</p>
+                <h3
+                    class="piece-name"
+                    onclick="location.href='https://www.kissingdynamitepoetry.com/iris-yu-home-remedies.html'">Home Remedies</h3>
+                <p class="excerpt">This is what I didn’t tell you last <br>
+                summer: I don’t remember the sour <br>
+                of Midwestern rain. Sometimes, when I’m <br>
+                home alone, I squeeze lemons over my <br>
+                lips to replicate the sting of acid... </p>
+            </div>
+            <div class="piece-container">
+                <p class="journal">Vagabond City Lit</p>
+                <h3
+                    class="piece-name"
+                    onclick="location.href='https://vagabondcitylit.com/2020/09/14/homegrown-by-iris-yu/'">Homegrown</h3>
+                <p class="excerpt">I am thinking about the way 姥姥 dices cucumber. Her skin is thick from bleeding and healing, bleeding and healing, a sinusoidal function acting independent of the moon. She does not fear the knife’s...</p>
+            </div>
+            <div class="piece-container">
+                <p class="journal">Sine Theta Magazine</p>
+                <h3
+                    class="piece-name"
+                    onclick="location.href='https://sinetheta.net/17.html'">In Which Ariadne's String Tangles</h3>
+                <p class="excerpt">I dream about you three nights in a row. I chug Red Bull after Red Bull after Red Bull, I am always losing. I wince. I hate sugar and my heart racing and waking up with pillow wet. I hate dreaming about you but...</p>
+            </div>
+        </div>
+   </section>
+   <section id="contact">
+        <h1 class="title">contact me</h1>
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact">
+                <input type="hidden" name="access_key" value="89ff2dc0-5567-4e7f-bbab-2ca3e5753f47">
+                <div class="contact-grid">
+                    <input type="text" name="firstname" placeholder="first name" class="contact-inputs" required>
+                    <input type="text" name="lastname" placeholder="last name" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="email" class="contact-inputs" required>
+                    <input type="text" name="phone" placeholder="phone number (optional)" class="contact-inputs">
+                </div>
+                <textarea name="message" placeholder="start typing your message..." class="contact-inputs" required></textarea>
+                <button type="submit">leave a message</button>
+            </form>
+        </div>
+   </section>
+   <script src="script.js"></script> 
+</body>
+</html>

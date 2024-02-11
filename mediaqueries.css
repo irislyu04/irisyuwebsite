@@ -1,0 +1,95 @@
+@media screen and (max-width: 1400px){
+    #about {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+    
+    #about {
+        display: block;
+    }
+
+    nav {
+        height: 12vh;
+    }
+
+    section {
+        padding-top: 15vh;
+        height: fit-content;
+        margin: 0 5%;
+    }
+
+    .section__pic-container1 {
+        display: flex;
+        width: 360px;
+        height: 360px;
+        margin: 5rem auto 1.5rem;
+    }
+    .section__pic-container2 {
+        display: none;
+    }
+
+    .publications-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .piece-container {
+        width: 75vw;
+        height: fit-content;
+    }
+
+    .contact {
+        gap: 2.5vh;
+    }
+    
+    .contact-container {
+        margin-top: 2.75rem;
+        margin-bottom: 5rem;
+    }
+
+    .contact-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5vh;
+    }
+
+    .contact-inputs {
+        width: 75vw;
+    }
+
+    .contact textarea {
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 3rem;
+    }
+    .section__text__p1 {
+        font-size: 1.3rem;
+    }
+
+    .section__pic-container1 {
+        display: flex;
+        width: 300px;
+        height: 300px;
+        margin: 7.5rem auto 1.5rem;
+    }
+
+    #socials-container {
+        margin-top: 2.5rem;
+    }
+
+    .icon {
+        height: 3rem;
+    }
+}
