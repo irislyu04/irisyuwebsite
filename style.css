@@ -324,7 +324,7 @@ section {
     cursor: pointer;
     color: rgb(255, 248, 235);
     gap: 10px;
-    border: none;
+    border: 2px solid rgb(255, 248, 235);
     border-radius: 20px;
     background: linear-gradient(270deg, rgb(18, 0, 2), rgb(34, 83, 49)); 
     font-family: 'Chakra Petch', sans-serif;
