@@ -78,6 +78,15 @@
         font-size: 1.3rem;
     }
 
+    section, .section__text__p1, .title, .publications-container {
+        margin: 3% 4%;
+        align-items: center;
+    }
+
+    .contact-inputs {
+        margin: auto;
+    }
+
     .section__pic-container1 {
         display: flex;
         width: 300px;
@@ -92,4 +101,6 @@
     .icon {
         height: 3rem;
     }
+
+
 }
